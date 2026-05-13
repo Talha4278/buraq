@@ -569,6 +569,33 @@ ul {
   margin: 0;
 }
 
+.testimonial-client {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.85rem;
+}
+
+.testimonial-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  color: #ffffff;
+  background: linear-gradient(135deg, #06b6d4 0%, #0ea5e9 100%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.testimonial-avatar-image {
+  object-fit: cover;
+  background: #ffffff;
+  padding: 4px;
+}
+
 .testimonial-stars {
   color: #fbbf24;
   margin-bottom: 1rem;
@@ -697,51 +724,12 @@ ul {
 }
 
 .booking-layout {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 2rem;
-  max-width: 900px;
+  max-width: 860px;
   margin: 0 auto;
-  align-items: start;
-}
-
-.booking-form-wrapper {
-  background: #f9fafb;
-  padding: 2rem;
-  border-radius: var(--radius-lg);
-  border: 1px solid #e5e7eb;
-}
-
-.booking-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.booking-form input,
-.booking-form select {
-  padding: 0.875rem 1rem;
-  background: white;
-  border: 1px solid #d1d5db;
-  border-radius: var(--radius);
-  color: #1f2937;
-  font-family: var(--font-body);
-  font-size: 1rem;
-}
-
-.booking-form input::placeholder,
-.booking-form select {
-  color: #9ca3af;
-}
-
-.booking-form input:focus,
-.booking-form select:focus {
-  outline: none;
-  border-color: var(--color-accent);
 }
 
 .calendar-placeholder {
-  padding: 2rem;
+  padding: 1rem;
   background: #f9fafb;
   border-radius: var(--radius-lg);
   border: 1px dashed #e5e7eb;
@@ -750,13 +738,16 @@ ul {
 }
 
 .calendar-embed {
-  min-height: 400px;
   margin-top: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: white;
   border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.calendly-inline-widget {
+  width: 100%;
+  min-width: 0;
+  height: 700px;
 }
 
 /* ===== 1️⃣1️⃣ FAQ ===== */
@@ -858,8 +849,12 @@ ul {
     padding: 1.5rem;
   }
 
-  .booking-layout {
-    grid-template-columns: 1fr;
+  .calendar-placeholder {
+    padding: 0.75rem;
+  }
+
+  .calendly-inline-widget {
+    height: 620px;
   }
 
   .hero-ctas {
