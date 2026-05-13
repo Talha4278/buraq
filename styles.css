@@ -104,7 +104,7 @@ ul {
   width: 100%;
 }
 
-/* ===== WhatsApp Button ===== */
+/* ===== Final CTA button row ===== */
 .cta-buttons {
   display: flex;
   gap: 1rem;
@@ -113,43 +113,12 @@ ul {
   margin-bottom: 1.5rem;
 }
 
-.btn-whatsapp {
-  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%) !important;
-  color: white !important;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  border-radius: var(--radius);
-  font-weight: 600;
-  transition: var(--transition);
-}
-
-.btn-whatsapp:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3);
-  background: linear-gradient(135deg, #128c7e 0%, #25d366 100%) !important;
-}
-
-.whatsapp-icon {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-}
-
-.whatsapp-subtitle {
-  color: var(--color-text-muted);
-  font-size: 0.95rem;
-  margin: 0;
-  text-align: center;
-}
-
 @media (max-width: 768px) {
   .cta-buttons {
     flex-direction: column;
     gap: 0.75rem;
   }
   
-  .btn-whatsapp,
   .btn-primary {
     width: 100%;
   }
@@ -198,14 +167,6 @@ ul {
 
 .nav-cta:hover {
   background: var(--color-accent-hover);
-}
-
-.nav-whatsapp {
-  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%) !important;
-}
-
-.nav-whatsapp:hover {
-  background: linear-gradient(135deg, #128c7e 0%, #25d366 100%) !important;
 }
 
 .nav-toggle {
