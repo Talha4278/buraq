@@ -135,12 +135,7 @@ ul {
   margin: 0 auto;
 }
 
-.nav-logo {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 1.25rem;
-  color: #1f2937;
-}
+
 
 .nav-links {
   display: flex;
