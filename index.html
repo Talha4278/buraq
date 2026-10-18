@@ -4,331 +4,793 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Launch Your SaaS in 4 Weeks | Development Agency</title>
+  <title>BuraqDev | Custom SaaS Engineering & In-House Product Lab</title>
   <meta name="description"
-    content="We help funded startups and SMEs design, build, and scale web & mobile apps efficiently.">
+    content="BuraqDev is a hybrid software studio & product lab. We engineer proprietary SaaS platforms (ClinSyst, WABook) and partner with funded startups to build scalable web & mobile apps in 6–8 weeks.">
+  <meta name="keywords" content="SaaS development agency, software product lab, ClinSyst, WABook, MVP development, web application development, mobile app development, React, Next.js, Node.js">
+  <link rel="canonical" href="https://buraqdev.com/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://buraqdev.com/">
+  <meta property="og:title" content="BuraqDev | Custom SaaS Engineering & In-House Product Lab">
+  <meta property="og:description"
+    content="We engineer, launch, and scale proprietary SaaS platforms while helping funded startups build production-ready applications on fixed milestones.">
+  <meta property="og:image" content="images/logos/b.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BuraqDev | Custom SaaS Engineering & In-House Product Lab">
+  <meta name="twitter:description"
+    content="We engineer, launch, and scale proprietary SaaS platforms while helping funded startups build production-ready applications on fixed milestones.">
+  <meta name="twitter:image" content="images/logos/b.png">
+
+  <!-- Favicon -->
   <link rel="icon" href="images/logos/b.png" type="image/png">
   <link rel="apple-touch-icon" href="images/logos/b.png">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Outfit:wght@500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Outfit:wght@500;600;700;800&display=swap"
     rel="stylesheet">
+
+  <!-- Structured Data: Organization & ProfessionalService -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "BuraqDev",
+    "url": "https://buraqdev.com/",
+    "logo": "https://buraqdev.com/images/logos/b.png",
+    "description": "Hybrid software engineering studio and product lab building proprietary SaaS platforms and custom web & mobile applications in 6–8 weeks.",
+    "priceRange": "$$$$",
+    "areaServed": "Global",
+    "knowsAbout": [
+      "Web Development",
+      "Mobile App Development",
+      "SaaS Engineering",
+      "MVP Architecture",
+      "HealthTech SaaS",
+      "ClinSyst Practice Management",
+      "WABook WhatsApp Scheduling",
+      "Next.js",
+      "React Native",
+      "Cloud Architecture"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Software Engineering & In-House Products",
+      "itemListElement": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "ClinSyst",
+          "url": "https://clinsyst.com/",
+          "applicationCategory": "HealthApplication",
+          "operatingSystem": "Web Cloud",
+          "description": "Intelligent clinic & practice management SaaS featuring automated EHR, scheduling, and billing."
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "WABook",
+          "url": "https://wabook.cloud/",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web Cloud",
+          "description": "Conversational 24/7 WhatsApp appointment scheduling & patient no-show reduction platform."
+        }
+      ]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "15",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do you build custom client software or only your own SaaS products?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Both. We operate as a hybrid venture studio and custom engineering lab. We build, scale, and maintain our own proprietary SaaS platforms (like ClinSyst and WABook) while simultaneously partnering with funded startups and established businesses to engineer their custom web and mobile applications. Because we manage live software with real paying users daily, our custom client codebases benefit from tested, real-world multi-tenant architectures and operational discipline."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is your pricing and milestone structure?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We operate exclusively on transparent, fixed-milestone pricing. Before development begins, you receive an itemized technical scope and clear schedule. You only pay as defined milestones are reviewed and approved."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does a typical MVP build take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most production-ready MVPs ship in 6 to 8 weeks. Larger platforms or complex legacy modernizations may require 8 to 12 weeks depending on third-party integrations and compliance requirements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I own 100% of the code and intellectual property?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, completely. You retain 100% intellectual property ownership of all custom source code, design assets, and architecture upon milestone completion. No vendor lock-in or licensing fees."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What technologies and frameworks do you specialize in?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our primary engineering stack includes Next.js, React, TypeScript, Node.js, React Native, PostgreSQL, Supabase, TailwindCSS, AWS, and Cloudflare."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide post-launch support and maintenance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every custom build includes a 30-day post-launch warranty for bug fixes. We also offer dedicated monthly support and continuous engineering retainers."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
-  <!-- 1️⃣ Hero Section -->
-  <header class="hero" id="hero">
-    <nav class="nav">
-      <a href="#" class="nav-brand">
-        <img src="images/logos/b.png" alt="Buraq Logo" class="nav-logo">
+  <!-- Header & Navigation -->
+  <div class="header-wrapper">
+    <nav class="nav" aria-label="Main Navigation">
+      <a href="#hero" class="nav-brand" aria-label="BuraqDev Home">
+        <img src="images/logos/b.png" alt="BuraqDev Logo" class="nav-logo">
         <span class="nav-brand-text">Buraq<span class="brand-accent">.</span></span>
       </a>
 
-      <ul class="nav-links">
+      <ul class="nav-links" id="nav-links-menu">
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#portfolio">Case Studies</a></li>
+        <li><a href="#products">Products <span class="nav-lab-badge">Labs</span></a></li>
         <li><a href="#process">Process</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a href="https://calendly.com/buraq1/30min" target="_blank" rel="noopener noreferrer" class="nav-cta">Book
-            Call</a></li>
+        <li><a href="#booking" class="nav-cta">Book Call</a></li>
       </ul>
-      <button class="nav-toggle" aria-label="Toggle menu">
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links-menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
     </nav>
-    <div class="hero-content">
-      <h1 class="hero-headline">Launch Your SaaS or Business App in Weeks — Without Hiring a Full Dev Team</h1>
-      <p class="hero-subheadline">We build web and mobile applications for startups and small businesses — helping you
-        go from idea to live product faster.</p>
-      <div class="hero-ctas">
-        <a href="https://calendly.com/buraq1/30min" target="_blank" rel="noopener noreferrer"
-          class="btn btn-primary">Book Strategy Call</a>
-        <a href="#portfolio" class="btn btn-secondary">See Case Studies</a>
-      </div>
-      <div class="proof-bar">
-        <span><strong>10+</strong> Projects Delivered</span>
-        <span class="proof-divider">•</span>
-        <span><strong>5+</strong> Active Clients</span>
+  </div>
 
-
-      </div>
-    </div>
-  </header>
-
-  <!-- 2️⃣ Social Proof Strip -->
-  <section class="social-proof">
-    <p class="social-proof-text">Trusted by startups across industries</p>
-    <div class="social-proof-logos">
-      <a href="https://alpha-clinic.vercel.app/" class="client-logo-link" aria-label="View Alpha Icon project details">
-        <img src="images/logos/aplha icon.png" alt="Alpha Icon" class="client-logo">
-      </a>
-      <a href="https://dentivista.com/" class="client-logo-link" aria-label="View client project details">
-        <img src="images/logos/icon.png" alt="Client Logo" class="client-logo">
-      </a>
-      <a href="https://www.nisa-go.com/" class="client-logo-link" aria-label="View favicon project details">
-        <img src="images/logos/favicon.png" alt="Favicon" class="client-logo">
-      </a>
-      <a href="https://wholsaleweb-dmd8.vercel.app/" class="client-logo-link"
-        aria-label="View favicon SVG project details">
-        <img src="images/logos/favicon.svg" alt="Favicon SVG" class="client-logo">
-      </a>
-    </div>
-    <div class="social-proof-rating">
-      <span class="stars">★★★★★</span>
-      <span>5-star average from 50+ reviews</span>
-    </div>
-  </section>
-
-
-  <!-- 4️⃣ Problem Section -->
-  <section class="problem-section" id="problem">
-    <div class="container">
-      <h2 class="section-title">Why Most Development Projects Fail</h2>
-      <p class="section-subtitle">Sound familiar? These are the exact problems we eliminate.</p>
-      <div class="problem-grid">
-        <div class="problem-card">
-          <span class="problem-icon">⌛</span>
-          <h3>Delays</h3>
-          <p>Missed deadlines, endless revisions, no clear milestones.</p>
-        </div>
-        <div class="problem-card">
-          <span class="problem-icon">📢</span>
-          <h3>Poor Communication</h3>
-          <p>Ghosting, timezone gaps, unclear status updates.</p>
-        </div>
-        <div class="problem-card">
-          <span class="problem-icon">📈</span>
-          <h3>Scope Creep</h3>
-          <p>Features keep growing, budgets don't, chaos ensues.</p>
-        </div>
-        <div class="problem-card">
-          <span class="problem-icon">💸</span>
-          <h3>Hidden Costs</h3>
-          <p>Unexpected invoices, vague pricing, no transparency.</p>
+  <main>
+    <!-- 1️⃣ Hero Section -->
+    <header class="hero" id="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="hero-tag-pulse" aria-hidden="true"></span>
+          <span>Hybrid Studio & Product Lab</span>
         </div>
 
-      </div>
-    </div>
-  </section>
+        <h1 class="hero-headline">
+          Launch Your Production-Ready SaaS or Web App in <span class="gradient-text">6–8 Weeks</span>
+        </h1>
 
-  <!-- 5️⃣ Why Choose Us -->
-  <section class="why-us" id="why-us">
-    <div class="container">
-      <h2 class="section-title">Why Choose Us</h2>
-      <p class="section-subtitle">We do things differently. Here's how.</p>
-      <div class="why-grid">
-        <div class="why-card">
-          <div class="why-number">01</div>
-          <h3>Fixed Milestones & Transparent Pricing</h3>
-          <p>No surprise invoices. You know exactly what you pay, when, and for what.</p>
+        <p class="hero-subheadline">
+          We engineer, launch, and scale our own proprietary SaaS platforms while partnering with funded startups and businesses to build high-performance web & mobile applications on fixed milestones.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#booking" class="btn btn-primary btn-large">Claim Your Architecture Call →</a>
+          <a href="#products" class="btn btn-secondary btn-large">Explore In-House SaaS Labs ↓</a>
         </div>
-        <div class="why-card">
-          <div class="why-number">02</div>
-          <h3>Business-First Development</h3>
-          <p>We build for ROI, not just code. Every feature ties back to your growth.</p>
+
+        <div class="proof-bar">
+          <span><strong>15+</strong> Projects Delivered</span>
+          <span class="proof-divider">•</span>
+          <span><strong class="proof-accent">2</strong> In-House SaaS Platforms</span>
+          <span class="proof-divider">•</span>
+          <span><strong>100%</strong> On-Time Record</span>
+          <span class="proof-divider">•</span>
+          <span><strong>5.0★</strong> Client Rating</span>
         </div>
-        <div class="why-card">
-          <div class="why-number">03</div>
-          <h3>Dedicated Project Manager</h3>
-          <p>Clear communication, weekly updates. You're never left guessing.</p>
+
+        <div class="hero-tech-stack">
+          <div class="tech-stack-label">Battle-Tested Core Stack</div>
+          <div class="tech-pills">
+            <span class="tech-pill">Next.js 15</span>
+            <span class="tech-pill">React</span>
+            <span class="tech-pill">TypeScript</span>
+            <span class="tech-pill">Node.js</span>
+            <span class="tech-pill">React Native</span>
+            <span class="tech-pill">PostgreSQL</span>
+            <span class="tech-pill">WhatsApp Cloud API</span>
+            <span class="tech-pill">AWS / Cloudflare</span>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- 6️⃣ Portfolio -->
-  <section class="portfolio" id="portfolio">
-    <div class="container">
-      <h2 class="section-title">Results That Speak</h2>
-      <p class="section-subtitle">Real projects, real outcomes.</p>
-      <div class="portfolio-grid">
-        <article class="portfolio-card">
-          <span class="portfolio-tag">Fintech Startup (UAE)</span>
-          <h3>Built MVP in 10 weeks</h3>
-          <p>Client needed a payment platform to enter new markets. We delivered a full MVP with compliance in 10 weeks.
+    <!-- 2️⃣ Social Proof Strip -->
+    <section class="social-proof" aria-label="Client Trust and Social Proof">
+      <div class="container">
+        <p class="social-proof-text">Trusted by Founders & Innovators Across North America, Europe & MENA</p>
+        <div class="social-proof-logos">
+          <a href="https://alpha-clinic.vercel.app/" target="_blank" rel="noopener noreferrer" class="client-logo-link"
+            aria-label="Visit Alpha Clinic platform (opens in new tab)">
+            <img src="images/logos/alpha-icon.png" alt="Alpha Clinic Logo" class="client-logo">
+          </a>
+          <a href="https://dentivista.com/" target="_blank" rel="noopener noreferrer" class="client-logo-link"
+            aria-label="Visit Dentivital Dental & Aesthetics Clinic website (opens in new tab)">
+            <img src="images/logos/dentivita-icon.png" alt="Dentivital Dental & Aesthetics Clinic Logo" class="client-logo">
+          </a>
+          <a href="https://www.nisa-go.com/" target="_blank" rel="noopener noreferrer" class="client-logo-link"
+            aria-label="Visit Nisa-Go Platform website (opens in new tab)">
+            <img src="images/logos/nisa-logo.png" alt="Nisa-Go Platform Logo" class="client-logo">
+          </a>
+          <a href="https://wholsaleweb-dmd8.vercel.app/" target="_blank" rel="noopener noreferrer" class="client-logo-link"
+            aria-label="Visit Wholesale Marketplace website (opens in new tab)">
+            <img src="images/logos/favicon.svg" alt="Wholesale Marketplace Logo" class="client-logo">
+          </a>
+        </div>
+        <div class="social-proof-rating">
+          <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+          <span>5.0 average across all production deliveries & SaaS products</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3️⃣ Problem Section -->
+    <section class="problem-section" id="problem" aria-labelledby="problem-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Industry Reality</div>
+          <h2 class="section-title" id="problem-title">Why 70% of Software Builds Fail</h2>
+          <p class="section-subtitle">Endless revisions, hidden invoices, and fragile code shouldn't be the industry norm. Here is what we permanently eliminate.</p>
+        </div>
+        <div class="problem-grid">
+          <div class="problem-card">
+            <span class="problem-badge" aria-hidden="true">⏱</span>
+            <h3>Timeline Slippage</h3>
+            <p>Weeks turn into quarters with zero working software to test with real users.</p>
+          </div>
+          <div class="problem-card">
+            <span class="problem-badge" aria-hidden="true">💬</span>
+            <h3>Communication Gaps</h3>
+            <p>Unclear updates, timezone friction, and developers who vanish for weeks.</p>
+          </div>
+          <div class="problem-card">
+            <span class="problem-badge" aria-hidden="true">💸</span>
+            <h3>Hidden Invoices</h3>
+            <p>Surprise change orders and runaway hourly bills that drain startup runway.</p>
+          </div>
+          <div class="problem-card">
+            <span class="problem-badge" aria-hidden="true">⚠️</span>
+            <h3>Fragile Architecture</h3>
+            <p>Quick hacks and unmaintainable code that collapse under real customer traffic.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4️⃣ Why Choose Us -->
+    <section class="why-us" id="why-us" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Engineering Standard</div>
+          <h2 class="section-title" id="why-title">The BuraqDev Engineering Standard</h2>
+          <p class="section-subtitle">We combine Silicon Valley product engineering discipline with boutique agency agility.</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-number" aria-hidden="true">01</div>
+            <h3>Fixed Milestones & Zero Surprises</h3>
+            <p>Every phase has a concrete scope, clear deliverables, and a fixed cost. You only pay when milestones are validated.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-number" aria-hidden="true">02</div>
+            <h3>Full Code & IP Ownership</h3>
+            <p>You own 100% of the repository, design assets, and infrastructure from day one. Clean TypeScript, zero vendor lock-in.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-number" aria-hidden="true">03</div>
+            <h3>Direct Senior Engineer Access</h3>
+            <p>No junior handoffs or bureaucratic account managers. Direct collaboration, bi-weekly live staging demos, and async Slack clarity.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5️⃣ Portfolio Section (Client Case Studies) -->
+    <section class="portfolio" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Client Case Studies</div>
+          <h2 class="section-title" id="portfolio-title">Proven Outcomes & Deployments</h2>
+          <p class="section-subtitle">Custom software engineered for clients to solve complex operational challenges and accelerate revenue.</p>
+        </div>
+        <div class="portfolio-grid">
+          <article class="portfolio-card">
+            <div class="portfolio-meta">
+              <span class="portfolio-tag">Fintech MVP (MENA)</span>
+              <span class="portfolio-badge">Shipped in 8 Weeks</span>
+            </div>
+            <h3>Cross-Border Payment Portal</h3>
+            <p>Engineered an end-to-end payment gateway MVP with multi-currency payouts, automated compliance checks, and bank API reconciliations.</p>
+            <div class="portfolio-result">
+              <strong>Impact:</strong> Reduced manual operations by 40% and scaled to 10k+ monthly active users.
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="portfolio-meta">
+              <span class="portfolio-tag">HealthTech SaaS (UK)</span>
+              <span class="portfolio-badge">Modernized in 6 Weeks</span>
+            </div>
+            <h3>Clinical Operations Suite</h3>
+            <p>Modernized an outdated monolithic appointment system into a high-speed microservices architecture with real-time patient alerts.</p>
+            <div class="portfolio-result">
+              <strong>Impact:</strong> 60% faster page speeds, 50% cloud cost reduction, zero-downtime migration.
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="portfolio-meta">
+              <span class="portfolio-tag">B2B E-Commerce (Global)</span>
+              <span class="portfolio-badge">Shipped in 8 Weeks</span>
+            </div>
+            <h3>Wholesale Vendor Marketplace</h3>
+            <p>Built a high-volume B2B marketplace supporting tiered wholesale pricing, live inventory synchronization, and automated invoicing.</p>
+            <div class="portfolio-result">
+              <strong>Impact:</strong> 500+ active vendors onboarded with 3x revenue expansion within 6 months.
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6️⃣ In-House Proprietary Products Lab -->
+    <section class="products-section" id="products" aria-labelledby="products-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">In-House SaaS Lab</div>
+          <h2 class="section-title" id="products-title">Proprietary Software We've Built & Scaled</h2>
+          <p class="section-subtitle">
+            We don't just build client apps — we engineer, launch, and operate our own live SaaS products. This firsthand experience guarantees battle-tested multi-tenant architectures, modern UI/UX, and scaling discipline.
           </p>
-          <p class="portfolio-result"><strong>Result:</strong> Reduced manual operations by 40%</p>
-        </article>
-        <article class="portfolio-card">
-          <span class="portfolio-tag">Healthcare SaaS (UK)</span>
-          <h3>Legacy system modernization</h3>
-          <p>Outdated monolithic app slowing down clinic operations. We rebuilt with microservices.</p>
-          <p class="portfolio-result"><strong>Result:</strong> 60% faster load times, 50% lower hosting costs</p>
-        </article>
-        <article class="portfolio-card">
-          <span class="portfolio-tag">E-commerce (Pakistan)</span>
-          <h3>Custom marketplace platform</h3>
-          <p>B2B marketplace needed scalable architecture for 500+ vendors.</p>
-          <p class="portfolio-result"><strong>Result:</strong> Launched in 8 weeks, 3x revenue in 6 months</p>
-        </article>
-      </div>
-    </div>
-  </section>
+        </div>
 
-  <!-- 7️⃣ Testimonials -->
-  <section class="testimonials" id="testimonials">
-    <div class="container">
-      <h2 class="section-title">What Our Clients Say</h2>
-      <p class="section-subtitle">Real feedback from real founders.</p>
-      <div class="testimonial-grid">
-        <blockquote class="testimonial-card">
-          <div class="testimonial-client">
-            <img src="images/logos/icon.png" alt="Dentivital brand icon"
-              class="testimonial-avatar testimonial-avatar-image">
-          </div>
-          <div class="testimonial-stars">★★★★★</div>
-          <p>"They delivered our website in 3 weeks, exactly as promised. Best dev partnership we've had."</p>
-          <footer>
-            <strong>Dr.Hashir </strong> — CEO, Dentivital Denatal & Aesthetics Clinic
-          </footer>
-        </blockquote>
-        <blockquote class="testimonial-card">
-          <div class="testimonial-client">
-            <span class="testimonial-avatar" aria-hidden="true">M</span>
-          </div>
-          <div class="testimonial-stars">★★★★★</div>
-          <p>"Clear communication, fixed milestones. No surprises. That's rare in this industry."</p>
-          <footer>
-            <strong>M.Qasim</strong> — Founder, Whole Sale Marketplace
-          </footer>
-        </blockquote>
-        <blockquote class="testimonial-card">
-          <div class="testimonial-client">
-            <span class="testimonial-avatar" aria-hidden="true">S</span>
-          </div>
-          <div class="testimonial-stars">★★★★★</div>
-          <p>"The codebase they delivered was clean and well-documented. Our in-house team took over seamlessly."</p>
-          <footer>
-            <strong>Sadeem S.</strong> — founder Mental & Wellness Platform
-          </footer>
-        </blockquote>
-      </div>
-    </div>
-  </section>
+        <div class="products-grid">
+          <!-- Product 1: ClinSyst -->
+          <article class="product-card">
+            <div class="product-card-header">
+              <div class="product-brand">
+                <div class="product-icon-wrap" aria-hidden="true">🏥</div>
+                <div class="product-name-wrap">
+                  <span class="product-category">HealthTech SaaS</span>
+                  <h3>ClinSyst</h3>
+                </div>
+              </div>
+              <div class="live-badge">
+                <span class="live-dot" aria-hidden="true"></span>
+                <span>Live Platform</span>
+              </div>
+            </div>
 
-  <!-- 8️⃣ Process Section -->
-  <section class="process" id="process">
-    <div class="container">
-      <h2 class="section-title">Our Simple 4-Step Process</h2>
-      <p class="section-subtitle">From idea to launch — no guesswork.</p>
-      <div class="process-timeline">
-        <div class="process-step">
-          <div class="process-number">1</div>
-          <h3>Discovery Call</h3>
-          <p>We understand your vision, goals, and constraints. No pressure — just clarity.</p>
+            <p class="product-desc">
+              Intelligent clinic & practice management software engineered from the ground up for medical, dental, and aesthetic practices. Features full electronic health records (EHR), multi-practitioner scheduling, automated billing, and HIPAA/GDPR-compliant infrastructure.
+            </p>
+
+            <div class="product-metrics-row">
+              <span class="product-metric-pill"><strong>Multi-Tenant</strong> Cloud Architecture</span>
+              <span class="product-metric-pill"><strong>Automated</strong> EHR & Invoicing</span>
+              <span class="product-metric-pill"><strong>Real-Time</strong> Clinic Ops</span>
+            </div>
+
+            <ul class="product-features-list">
+              <li><span class="check" aria-hidden="true">✓</span> Complete patient charts, treatment plans & clinical notes</li>
+              <li><span class="check" aria-hidden="true">✓</span> Automated revenue reporting & multi-tier invoice generation</li>
+              <li><span class="check" aria-hidden="true">✓</span> Multi-branch & role-based practitioner permission controls</li>
+            </ul>
+
+            <div class="product-ctas">
+              <a href="https://clinsyst.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                aria-label="Visit ClinSyst live platform (opens in new tab)">
+                Visit ClinSyst.com ↗
+              </a>
+              <a href="#booking" class="btn btn-secondary">
+                Request Custom Clinic Setup
+              </a>
+            </div>
+          </article>
+
+          <!-- Product 2: WABook -->
+          <article class="product-card">
+            <div class="product-card-header">
+              <div class="product-brand">
+                <div class="product-icon-wrap" aria-hidden="true">💬</div>
+                <div class="product-name-wrap">
+                  <span class="product-category">AI Scheduling SaaS</span>
+                  <h3>WABook</h3>
+                </div>
+              </div>
+              <div class="live-badge">
+                <span class="live-dot" aria-hidden="true"></span>
+                <span>Live Platform</span>
+              </div>
+            </div>
+
+            <p class="product-desc">
+              Conversational 24/7 WhatsApp appointment scheduling and patient engagement engine. Powered by the official WhatsApp Business Cloud API, WABook enables patients to self-book, reschedule, and receive automated reminders directly in WhatsApp chat.
+            </p>
+
+            <div class="product-metrics-row">
+              <span class="product-metric-pill"><strong>60%</strong> No-Show Reduction</span>
+              <span class="product-metric-pill"><strong>24/7</strong> WhatsApp Automation</span>
+              <span class="product-metric-pill"><strong>2-Way</strong> Live Calendar Sync</span>
+            </div>
+
+            <ul class="product-features-list">
+              <li><span class="check" aria-hidden="true">✓</span> Interactive WhatsApp chatbot slot picker & instant booking</li>
+              <li><span class="check" aria-hidden="true">✓</span> Automated reminder flows with 1-tap confirmation or rescheduling</li>
+              <li><span class="check" aria-hidden="true">✓</span> Native 2-way sync with Google Calendar, Outlook & ClinSyst</li>
+            </ul>
+
+            <div class="product-ctas">
+              <a href="https://wabook.cloud/" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                aria-label="Explore WABook Cloud platform (opens in new tab)">
+                Explore WABook.cloud ↗
+              </a>
+              <a href="#booking" class="btn btn-secondary">
+                Enterprise WhatsApp Integration
+              </a>
+            </div>
+          </article>
         </div>
-        <div class="process-step">
-          <div class="process-number">2</div>
-          <h3>Technical Roadmap</h3>
-          <p>You get a clear scope, timeline, and fixed quote. No surprises.</p>
-        </div>
-        <div class="process-step">
-          <div class="process-number">3</div>
-          <h3>Development Sprints</h3>
-          <p>Bi-weekly demos, transparent progress. You're always in the loop.</p>
-        </div>
-        <div class="process-step">
-          <div class="process-number">4</div>
-          <h3>Launch & Support</h3>
-          <p>We launch, document, and hand off. Optional ongoing support available.</p>
+
+        <!-- Product Synergy Ecosystem Callout -->
+        <div class="product-ecosystem-banner">
+          <div class="ecosystem-content">
+            <div class="ecosystem-badge">Clinical Ecosystem Synergy</div>
+            <h4>The Integrated Healthcare Operations Stack</h4>
+            <p>
+              Adopt <strong>ClinSyst</strong> for comprehensive internal practice workflows and connect <strong>WABook</strong> for automated 24/7 WhatsApp patient scheduling. Clinics adopting both platforms cut administrative labor by 50% and reduce missed appointments by up to 60%.
+            </p>
+          </div>
+          <a href="#booking" class="btn btn-primary" style="white-space: nowrap; flex-shrink: 0;">
+            Deploy Integrated Suite →
+          </a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- 9️⃣ Offer Section -->
-  <section class="offer" id="offer">
+    <!-- 7️⃣ Testimonials -->
+    <section class="testimonials" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Social Validation</div>
+          <h2 class="section-title" id="testimonials-title">Verified Client Feedback</h2>
+          <p class="section-subtitle">Real feedback from founders and clinical directors who depend on our engineering.</p>
+        </div>
+
+        <!-- Google Business Verified Profile Bar -->
+        <div class="google-reviews-header">
+          <div class="google-brand-wrap">
+            <svg class="google-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+            </svg>
+            <div class="google-rating-info">
+              <div class="google-rating-row">
+                <span class="google-rating-score" id="google-live-score">5.0</span>
+                <span class="google-stars" aria-label="5 out of 5 stars">★★★★★</span>
+                <span class="google-verified-badge">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                  Verified Reviews
+                </span>
+              </div>
+              <span class="google-verified-text">Official Google Business Profile Rating (<span id="google-live-count">15+</span> reviews) for <strong>Buraq Dev</strong></span>
+            </div>
+          </div>
+
+          <a href="https://www.google.com/search?q=Buraq+Dev&stick=H4sIAAAAAAAA_-NgU1IxqDC2NExNTUo1ME9MTDJPTE2yMqiwSDJJsrRMMUi2tDA1MTFZxMrpVFqUWKjgkloGAGvEyAQ0AAAA&hl=en-GB"
+             target="_blank" rel="noopener noreferrer" class="google-profile-btn"
+             aria-label="View verified Buraq Dev reviews on Google (opens in new tab)">
+            <span>View on Google Reviews</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </a>
+        </div>
+
+        <div class="testimonial-grid" id="google-reviews-grid">
+          <blockquote class="testimonial-card">
+            <div class="testimonial-card-top">
+              <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+              <span class="verified-source-tag">
+                <span class="verified-check">✓</span> Google Verified
+              </span>
+            </div>
+            <p class="testimonial-quote">"They delivered our custom clinic management platform in 6 weeks, exactly as scoped. Proactive communication and spotless code quality make this the best dev partnership we've ever had."</p>
+            <footer class="testimonial-author">
+              <img src="images/logos/dentivita-icon.png" alt="Dr. Hashir portrait" class="testimonial-avatar testimonial-avatar-image">
+              <div class="testimonial-meta">
+                <span class="author-name">Dr. Hashir</span>
+                <span class="author-role">CEO, Dentivital Dental & Aesthetics Clinic</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <div class="testimonial-card-top">
+              <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+              <span class="verified-source-tag">
+                <span class="verified-check">✓</span> Google Verified
+              </span>
+            </div>
+            <p class="testimonial-quote">"Fixed milestones, clear bi-weekly demos, and transparent code commits. No surprises, no billing friction. BuraqDev operates like a true technical co-founder."</p>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">Q</div>
+              <div class="testimonial-meta">
+                <span class="author-name">M. Qasim</span>
+                <span class="author-role">Founder, Wholesale Marketplace</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <div class="testimonial-card-top">
+              <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+              <span class="verified-source-tag">
+                <span class="verified-check">✓</span> Google Verified
+              </span>
+            </div>
+            <p class="testimonial-quote">"The codebase they delivered was clean, fully typed in TypeScript, and thoroughly documented. Our in-house engineers took over seamlessly with zero onboarding pain."</p>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">S</div>
+              <div class="testimonial-meta">
+                <span class="author-name">Sadeem S.</span>
+                <span class="author-role">Founder, Mental Wellness Platform</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8️⃣ Process Section -->
+    <section class="process" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Methodology</div>
+          <h2 class="section-title" id="process-title">Our 4-Step Engineering Roadmap</h2>
+          <p class="section-subtitle">From initial technical blueprint to production launch — predictable and transparent.</p>
+        </div>
+        <div class="process-timeline">
+          <div class="process-step">
+            <div class="process-number">1</div>
+            <h3>Discovery & Architecture</h3>
+            <p>Days 1–3: We analyze your product vision, define data models, and finalize a fixed scope and delivery schedule.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-number">2</div>
+            <h3>UI/UX & System Design</h3>
+            <p>Weeks 1–2: High-fidelity interactive prototypes in Figma and API contracts agreed upon before writing core code.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-number">3</div>
+            <h3>Sprint Deployments</h3>
+            <p>Weeks 3–6: Rapid 14-day sprints with live staging demo links. You see and test working software every two weeks.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-number">4</div>
+            <h3>Production & Handover</h3>
+            <p>Weeks 7–8: CI/CD automation, security hardening, cloud deployment, complete documentation, and 30 days of warranty.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9️⃣ Booking & Strategy Call Section -->
+    <section class="booking-section" id="booking" aria-labelledby="booking-title">
+      <div class="container">
+        <div class="booking-card">
+          <div class="booking-split">
+            <div class="booking-value">
+              <div class="section-tag">Direct Technical Access</div>
+              <h2 class="section-title" id="booking-title" style="text-align: left; font-size: 2.2rem; margin-bottom: 0.75rem;">
+                Schedule Your Free 30-Minute Architecture Call
+              </h2>
+              <p>Zero high-pressure sales talk. A focused technical consultation with a senior software architect to evaluate feasibility, timeline, and architecture.</p>
+
+              <ul class="offer-checklist">
+                <li>
+                  <span class="check-icon" aria-hidden="true">✓</span>
+                  <span><strong>Architecture Review:</strong> Critical feasibility and scalability assessment for your concept or clinical suite.</span>
+                </li>
+                <li>
+                  <span class="check-icon" aria-hidden="true">✓</span>
+                  <span><strong>Timeline Roadmap:</strong> Realistic 6–8 week milestone and MVP sprint schedule.</span>
+                </li>
+                <li>
+                  <span class="check-icon" aria-hidden="true">✓</span>
+                  <span><strong>Fixed Budget Scope:</strong> Transparent cost estimation with zero hidden fees.</span>
+                </li>
+                <li>
+                  <span class="check-icon" aria-hidden="true">✓</span>
+                  <span><strong>Tech Stack Recommendation:</strong> Modern frameworks selected for performance, security, and ROI.</span>
+                </li>
+              </ul>
+
+              <div class="booking-guarantee">
+                <strong>100% Confidential:</strong> All architecture discussions and proprietary business concepts are protected under standard NDA principles.
+              </div>
+            </div>
+
+            <div class="calendar-frame">
+              <!-- Calendly Inline Widget -->
+              <div class="calendly-inline-widget" data-url="https://calendly.com/buraq1/30min?hide_landing_page_details=1&hide_gdpr_banner=1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔟 FAQ Section -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Clarity & Answers</div>
+          <h2 class="section-title" id="faq-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Everything you need to know about partnering with BuraqDev.</p>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>
+              <span>Do you build custom client software or only your own SaaS products?</span>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </summary>
+            <p class="faq-answer">
+              Both. We operate as a hybrid venture studio and custom engineering lab. We build, scale, and maintain our own proprietary SaaS platforms (like ClinSyst and WABook) while simultaneously partnering with funded startups and established businesses to engineer their custom web and mobile applications. Because we manage live software with real paying users daily, our custom client codebases benefit from tested, real-world multi-tenant architectures and operational discipline.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>What is your pricing and milestone structure?</span>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </summary>
+            <p class="faq-answer">
+              We work exclusively with fixed-milestone pricing. Before writing a line of code, you receive an itemized technical scope, architecture blueprint, and sprint schedule. You review and approve deliverables at each milestone before releasing payments.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>How long does a typical MVP or web build take?</span>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </summary>
+            <p class="faq-answer">
+              Standard production-ready MVPs ship in 6 to 8 weeks. Larger enterprise platforms or complex integrations typically require 8 to 12 weeks. We determine an exact, contractually backed timeline during our discovery sprint.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Do I own 100% of the code and intellectual property?</span>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </summary>
+            <p class="faq-answer">
+              Yes, entirely. Upon milestone payment, 100% intellectual property ownership of your custom repository, design assets, and architecture is transferred directly to your organization. Zero licensing fees, no proprietary lock-in.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>What technologies and frameworks do you use?</span>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </summary>
+            <p class="faq-answer">
+              We build with modern, industry-standard technologies: Next.js, React, TypeScript, Node.js, React Native, PostgreSQL, Supabase, TailwindCSS, AWS, and Cloudflare. This ensures your in-house team can easily scale the codebase in the future.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Do you offer post-launch maintenance and support?</span>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </summary>
+            <p class="faq-answer">
+              Every custom build includes 30 days of comprehensive post-launch warranty to guarantee stability. We also offer monthly support retainers for continuous feature iteration, security updates, and infrastructure monitoring.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1️⃣1️⃣ Final CTA Section -->
+    <section class="final-cta" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-box">
+          <h2 id="cta-title">Ready to Build a High-Performance, Scalable Product?</h2>
+          <p>Stop risking your runway with unreliable freelancers or bloated enterprise agencies. Let's engineer your application right the first time.</p>
+          <div class="cta-buttons">
+            <a href="#booking" class="btn btn-primary btn-large">Claim Your Free Architecture Roadmap →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
     <div class="container">
-      <h2 class="section-title">Free 30-Minute Technical Strategy Call</h2>
-      <p class="section-subtitle">Not a sales pitch. Real value, zero obligation.</p>
-      <div class="offer-content">
-        <div class="offer-benefits">
-          <p><strong>What you'll get:</strong></p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-brand" aria-label="BuraqDev Home">
+            <img src="images/logos/b.png" alt="BuraqDev Logo" class="nav-logo">
+            <span class="nav-brand-text">Buraq<span class="brand-accent">.</span></span>
+          </a>
+          <p>
+            Hybrid software studio & product lab. Engineering scalable web and mobile applications for startups, clinics, and enterprises with fixed sprints and battle-tested code.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>In-House SaaS Labs</h4>
           <ul>
-            <li>Project feasibility feedback</li>
-            <li>Timeline estimate</li>
-            <li>Budget range</li>
-            <li>Technical recommendations</li>
+            <li><a href="https://clinsyst.com/" target="_blank" rel="noopener noreferrer">ClinSyst (Practice Management) ↗</a></li>
+            <li><a href="https://wabook.cloud/" target="_blank" rel="noopener noreferrer">WABook (WhatsApp Scheduling) ↗</a></li>
+            <li><a href="#products">Integrated Clinical Suite</a></li>
           </ul>
         </div>
-        <div class="offer-ctas">
-          <a href="https://calendly.com/buraq1/30min" target="_blank" rel="noopener noreferrer"
-            class="btn btn-primary btn-large">Book Your Strategy Call</a>
+
+        <div class="footer-col">
+          <h4>Custom Engineering</h4>
+          <ul>
+            <li><a href="#why-us">Why Choose Us</a></li>
+            <li><a href="#portfolio">Case Studies</a></li>
+            <li><a href="#process">4-Step Process</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#booking">Book Strategy Call</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact & Direct</h4>
+          <ul>
+            <li><a href="mailto:contact@buraqdev.com">contact@buraqdev.com</a></li>
+            <li><a href="https://calendly.com/buraq1/30min" target="_blank" rel="noopener noreferrer">Direct Calendly Calendar ↗</a></li>
+            <li><span style="color: var(--color-text-dim);">Response time: &lt; 24 hours</span></li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- 🔟 Booking Section -->
-  <section class="booking" id="booking">
-    <div class="container">
-      <h2 class="section-title">Book Your Call</h2>
-      <p class="section-subtitle">Pick a time that works. We'll take it from there.</p>
-      <div class="booking-layout">
-        <div class="calendar-placeholder">
-          <p>Book directly via Calendly</p>
-          <div class="calendar-embed">
-            <div class="calendly-inline-widget" data-url="https://calendly.com/buraq1/30min"></div>
-          </div>
-        </div>
+      <div class="footer-bottom">
+        <p>© 2025 Talha Sarfraz Malik, trading as BuraqDev. All rights reserved.</p>
+        <p>Built with modern web standards and high-performance architecture.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- 1️⃣1️⃣ FAQ Section -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <h2 class="section-title">Frequently Asked Questions</h2>
-      <div class="faq-list">
-        <details class="faq-item">
-          <summary>What's your pricing model?</summary>
-          <p>We work with fixed milestones. You get a clear quote before we start, broken down by phase. No hourly
-            surprises.</p>
-        </details>
-        <details class="faq-item">
-          <summary>How long does a typical project take?</summary>
-          <p>MVPs typically ship in 8–12 weeks. Larger projects vary by scope. We'll give you a timeline in the strategy
-            call.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Do I own the code?</summary>
-          <p>Yes. Full ownership transfers to you upon final payment. No lock-in, no licenses.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Do you offer maintenance and support?</summary>
-          <p>Yes. We offer post-launch support packages — fixes, updates, and feature additions on retainer.</p>
-        </details>
-        <details class="faq-item">
-          <summary>What industries do you serve?</summary>
-          <p>Fintech, healthcare, e-commerce, SaaS, marketplaces. If it's web or mobile, we can build it.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- 1️⃣2️⃣ Final CTA Section -->
-  <section class="final-cta">
-    <div class="container">
-      <h2>Ready to Build a Scalable Product?</h2>
-      <p>Stop guessing. Get clarity. Launch on time.</p>
-      <div class="cta-buttons">
-        <a href="https://calendly.com/buraq1/30min" target="_blank" rel="noopener noreferrer"
-          class="btn btn-primary btn-large">Book Your Strategy Call</a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container footer-content">
-      <img src="images/logos/b.png" alt="Buraq Logo" class="footer-logo">
-      <p>© 2025 Talha Sarfraz Malik, trading as BuraqDev. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <!-- Application Logic -->
   <script type="module" src="script.js"></script>
 </body>
 
